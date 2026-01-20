@@ -185,8 +185,8 @@ def run_survey(store, date, hour, minute):
         
         try:
             # 📮 Enter postal code in the first text input
-            page.locator("input[type='text']").first.fill("L6P 1H5")
-            print("📮 Entered postal code: L6P 1H5")
+            page.locator("input[type='text']").first.fill("A1A 1A1")
+            print("📮 Entered postal code: A1A 1A1")
 
             # 👶 Click the second 'No' radio button (child question)
             page.locator("input[type='radio']").nth(1).click()
@@ -212,8 +212,8 @@ def run_survey(store, date, hour, minute):
 
         try:
             page.wait_for_selector("input[type='text']", timeout=10000)
-            page.fill("input[type='text']", "thesopans@gmail.com")
-            print("📧 Entered email: thesopans@gmail.com")
+            page.fill("input[type='text']", "example@example.com")
+            print("📧 Entered email: example@example.com")
 
             page.click("button:has-text('Finish')")
             print("🎉 Survey finished and email submitted!")
