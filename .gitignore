@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Secrets / env
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Playwright / browser state
+playwright/.auth/
+storage_state.json
+*.har
+
+# Outputs / artifacts
+*.log
+output/
+reports/
+receipts/
+screenshots/
+tmp/
+
+# Images / receipts
+*.jpg
+*.jpeg
+*.png
+*.webp
