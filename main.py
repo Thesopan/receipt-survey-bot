@@ -2,7 +2,7 @@ from ocr import read_receipt
 from extract_receipt_info import extract_info_from_text
 from survey_filler import run_survey
 
-receipt_path = "IMG_6878.jpg"
+receipt_path = "sample_receipt.jpg"
 text, _ = read_receipt(receipt_path)
 
 print("\n=== RAW OCR OUTPUT ===")
